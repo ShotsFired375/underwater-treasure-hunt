@@ -7,7 +7,7 @@ class Treasure {
         this.body = Bodies.rectangle(x,y,width,height,options);
         this.width = width;
         this.height = height;
-        this.image = loadImage("images/TreasureIMG.png");
+        this.image = loadImage("images/treasureIMG.png");
         World.add(world, this.body);
     }
 
