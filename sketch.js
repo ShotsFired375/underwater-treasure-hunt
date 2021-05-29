@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Constraint = Matter.Constraint;
 
 var bgImg, bgIMG, bgIMG2, diverAnimation, sharkImg, titleIMG, bg;
-var diver1, beginningGreeting, sparklesGIF, treasure1, oofGIF, wowGIF;
+var diver1, beginningGreeting, sparklesGIF, treasure1, oofGIF, wowGIF, treasureIMG;
 var gameState = 0;
 var wall1, wall2, wall3;
 var playerLives=5;
@@ -20,6 +20,7 @@ function preload() {
   sparklesGIF2 = createImg("images/infinitesparkles.gif");
   oofGIF = createImg("images/oofgif.gif");
   wowGIF = createImg("images/wowgif.gif");
+  treasureIMG = createImg("images/treasureIMG.png");
 }
 
 
@@ -70,6 +71,9 @@ function setup() {
 
 function draw() {
   if (gameState===1) {
+	  
+    treasureIMG.position(6010,335);
+    treasureIMG.size(30,50);
     background("white");
     bg = image(bgIMG2, -325, -1, 7000, 400);  
 
