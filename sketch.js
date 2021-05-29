@@ -73,7 +73,7 @@ function draw() {
   if (gameState===1) {
 	  
     treasureIMG.position(6010,335);
-    treasureIMG.size(30,50);
+    treasureIMG.size(3,5);
     background("white");
     bg = image(bgIMG2, -325, -1, 7000, 400);  
 
@@ -121,8 +121,10 @@ function draw() {
   } else if (gameState===0){
     background("lightblue");
     oofGIF.size(0,0);
+	  treasureIMG.size(0,0);
   } else if (gameState===2) {
     background("red");
+	  treasureIMG.size(0,0);
     strokeWeight(2);
     stroke("white");
     fill(rgb(230, 79, 65));
@@ -130,6 +132,7 @@ function draw() {
     text(":/ you lost! reload to play again! :/", 200, 200);
   } else if (gameState===3) {
     camera.position.x=400;
+	  treasureIMG.size(0,0);
     background("green");
     strokeWeight(1.5);
     stroke("white");
