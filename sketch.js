@@ -73,7 +73,7 @@ function draw() {
   if (gameState===1) {
 	  
     treasureIMG.position(6010,335);
-    treasureIMG.size(3,5);
+    treasureIMG.size(0.3,0.5);
     background("white");
     bg = image(bgIMG2, -325, -1, 7000, 400);  
 
